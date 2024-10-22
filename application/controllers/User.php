@@ -109,25 +109,6 @@ class User extends CI_Controller
 
 
             echo json_encode($response);
-
-            // $existingProfile = $this->User_model->getProfile();
-
-            // if ($existingProfile) {
-            //     if (file_exists($existingProfile->profile_picture)) {
-            //         unlink($existingProfile->profile_picture);
-            //     }
-            //     $update = $this->User_model->updateProfilePicture($imagePath);
-            // } else {
-            //     $update = $this->User_model->insertProfilePicture($imagePath);
-            // }
-
-            // if ($update) {
-            //     $response = array('success' => true, 'imagePath' => base_url($imagePath), 'fileName' => $imagePath);
-            // } else {
-            //     $response = array('success' => false, 'error' => 'Failed to update profile picture in the database.');
-            // }
-
-            //echo json_encode($response);
         }
     }
 
