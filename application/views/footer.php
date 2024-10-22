@@ -60,7 +60,7 @@
                         $('#imageUploadForm')[0].reset();
                         $('input[name="fileNameInput"]').val('');
                         $('#profilePreview').attr('src', '<?= base_url('assets/images/user_thume_img.png'); ?>');
-                        fetchUsers();
+                        location.reload();
                     } else {
                         alert('Image upload failed: ' + result.error);
                     }
@@ -99,8 +99,6 @@
             $('#profilePreview').attr('src', imageItem.data('path'));
             $('#fileexampleModal').modal('hide');
         });
-
-
 
         // Fetch users from the server and display them in the table
         function fetchUsers() {
