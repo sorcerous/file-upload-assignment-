@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFF  !important;
+   font-family: "Poppins", sans-serif;}
+
+.mainPD {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px 15pc
+}
+.selectprofile {
+    margin: 0 auto;
+    border-radius: 0;
+    text-align: center;
+    padding: 15px;
+}
+
+.selectprofile .modalOpenbutton {
+    padding: 10px 20px;
+    border: none;
+    background: #3e3d3d;
+    color: #fff;
+    /* margin: 0 auto; */
+    margin: 15px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.cusModal_Me .nav-tabs .nav-item.show .nav-link, .cusModal_Me .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #408de6;
+    border-color: #408de6;
+}
+.cusModal_Me .nav-tabs .nav-link:focus, .cusModal_Me .nav-tabs .nav-link:hover {
+    isolation: isolate;
+    border-color: #408de6;
+    border-bottom: 1px solid transparent !important;
+    border:none;
+}
+.cusModal_Me .nav-tabs .nav-link {
+    display: block;
+    padding: 12px 25px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1F1515;
+    border-bottom: 1px solid transparent !important;
+    border:none;
+}
+
+
+.cusModal_Me .modal-dialog {
+    position: relative;
+    width: auto;
+    margin:0 auto;
+    pointer-events: none;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cusModal_Me .modal-dialog {
+    max-width: 650px;
+    margin: 1.75rem auto;
+    border-radius: 41px;
+}
+.cusModal_Me .modal-content {
+    border: 0;
+    border-radius: 20px;
+}
+.cusModal_Me .modal-header {
+    border-bottom: 0 solid #dee2e6;
+}
+
+.cusModal_Me .modal-footer {
+    display: block;
+    margin: 15px auto 0 0;
+    width: 100%;
+    text-align: right;
+    border:none;
+}
+.cusModal_Me .modal-footer button {
+    padding: 13px 25px;
+    border: none;
+    background: #408de6;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 18px;
+    border-radius: 11px;
+    line-height: 24px;
+    border:1px solid #408de6;
+}
+.cusModal_Me .modal-footer button.cancelbTN {
+    background: #fff;
+    color: #408de6;
+    margin-right: 10px
+}
+
+.cusModal_Me .modal-body {
+    padding:15px 30px 50px;
+}
+
+.cusModal_Me #myTabContent {
+    padding: 50px 0 0;
+}
+
+.selectprofile_dropdoun {
+    width:100%;
+    margin: 0 auto 30px;
+    border: 1px dotted #dfdfdf;
+    border-radius: 0;
+    text-align: center;
+    padding: 15px;
+}
+.selectprofile_dropdoun .drop-zone {
+  max-width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.selectprofile_dropdoun .drop-zone .fileIconSection{
+	width: 80px;
+}
+.selectprofile_dropdoun .drop-zone .selectprofile h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 20px 0 10px;
+    color: #1F1515;
+}
+.selectprofile_dropdoun .drop-zone .selectprofile p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+.selectprofile_dropdoun  .drop-zone--over {
+  border-style: solid;
+}
+
+.selectprofile_dropdoun .drop-zone__input {
+  display: none;
+}
+.selectprofile_dropdoun .drop-zone__thumb {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #cccccc;
+  background-size: cover;
+  position: relative;
+}
+.selectprofile_dropdoun .drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+
+.selectprofile_option {
+    position: relative;
+}
+.selectprofile_option .fileLable {
+    background: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: -13px;
+    left: 15px;
+    z-index: 2;
+    color: #408de6;
+}
+.ImgNots{
+    color: rgb(188 72 72);
+}
+/* .selectprofile_option label {
+    background: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: -13px;
+    left: 15px;
+    z-index: 2;
+    color: #408de6;
+} */
+/* #userEmail:not(:placeholder-shown):invalid{
+    background-color:pink;
+    box-shadow:0 0 0 2px red;
+  } */
+
+.fileUploadInput {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #dfdfdf;
+    border-radius: 9px;
+    transition: 0.2s;
+    justify-content: space-between;
+}
+.fileUploadInput input {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+  width: 80%;
+  height: 40px;
+  border: 1px solid transparent;
+  font-size: 16px;
+}
+.fileUploadInput input[type=file] {
+  padding: 0 ;
+}
+.fileUploadInput input[type=file]::-webkit-file-upload-button {
+  visibility: hidden;
+  margin-left: 10px;
+  padding: 0;
+  height: 40px;
+  width: 0px;
+}
+.fileUploadInput ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.fileUploadInput ul li {
+    padding: 0 5px;
+    list-style-type: none;
+}
+.fileUploadInput ul li button {
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+.fileUploadInput ul li .userIconIMG{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+    cursor: pointer;
+}
+
+.userIconIMGT{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+.searchSection .search-box{
+  width: 100%;
+  position: relative;
+  display: flex;
+
+}
+
+
+.searchSection .search-input{
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #dfdfdf;
+  border-radius:10px 0 0 10px ;
+  border-right: none;
+  outline: none;
+  font-size: 16px;
+  color: #101010;
+  background: none;
+}
+.searchSection .search-button {
+    text-align: center;
+    height: auto;
+    width: 54px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #408de6;
+    border-radius: 0 10px 10px 0;
+    border-left: none;
+    background: #408de6;
+    font-size: 20px;
+    border-left: 1px solid #408de6;
+}
+
+.searchSection .cusUl {
+    margin: 50px 0 50px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.searchSection .cusUl li{
+	list-style-type: none;
+	margin: 5px;
+}
+.searchSection .cusUl li button {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	/* border:1px solid red; */
+	padding: 2px;
+
+}
+.red-border {
+    border: 2px solid red;
+  }
+.searchSection .cusUl li button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+.aler_mGESS {
+    color: red;
+    text-align: center;
+    margin: 15px 0 0;
+}
+
+
+/* //my css */
+
+.selectprofile_option{
+    margin-top: 6%;
+    width: 60%;
+    margin-left: 20%;
+}
+
+button.btn.btn-primary.modalOpenbutton{
+    margin-left: 50%;
+
+}
